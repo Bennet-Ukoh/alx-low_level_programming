@@ -1,72 +1,59 @@
 #include <stdio.h>
 
-
-
 /**
- * main - program that prints all possible combinations of
- * two two-digit
- * The numbers should range from 0 to 99
- * Numbers must be separated by ,followed by a space
- * All numbers should be printed with two digits. 1 should be printed as 01
- * Return: 0
+ * main - print possible combo of two 2-digit
+ * numbers
+ * Return: returns zero ar the end
  */
-
-
 
 int main(void)
 
 {
 
-		int n1 = 48;
-
-			int a = 0;
-
-				int b;
-
-					int com = 44;
+		int i, j;
 
 
 
-						while (a <= 99)
+			for (i = 0; i < 100; i++)
 
-								{
+					{
 
-											b = a + 1;
+								for (j = 0; j < 100; j++)
 
-													while (b <= 99)
+											{
 
-																{
+															if (j > i)
 
-																				putchar((a / 10) + n1);
+																			{
 
-																							putchar((a % 10) + n1);
+																								putchar((i / 10) + '0');
 
-																										putchar(32);
+																												putchar((i % 10) + '0');
 
-																													putchar((b / 10) + n1);
+																																putchar(' ');
 
-																																putchar((b % 10) + n1);
+																																				putchar((j / 10) + '0');
 
-																																			if (a != 98 || b != 99)
+																																								putchar((j % 10) + '0');
 
-																																							{
+																																												if (i != 98)
 
-																																												putchar(com);
+																																																	{
 
-																																																putchar(32);
+																																																							putchar(',');
 
-																																																			}
+																																																												putchar(' ');
 
-																																						b += 1;
+																																																																}
 
-																																								}
+																																															}
 
-															a += 1;
+																	}
 
-																}
+									}
 
-							putchar('\n');
+				putchar('\n');
 
-								return (0);
+					return (0);
 
 }
