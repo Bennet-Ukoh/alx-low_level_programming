@@ -1,28 +1,17 @@
 #include <stdio.h>
-
 /**
- * main - print single digit numbers starting from 0
- * Return: returns zero ar the end
+ * main - prints single digit numbers from 0-9
+ * followed by new line using only putchar
+(*
+ * Return: 0 on sucess
  */
-
 int main(void)
-
 {
-
-		int i;
-
-
-
-			for (i = 0; i < 10; i++)
-
-					{
-
-								putchar(i + '0');
-
-									}
-
-				putchar('\n');
-
-					return (0);
-
+	int = i;
+	for(i='0'; i<='9'; i++)
+	{
+		putchar(i);
+	}
+	putchar('\n');
+	return(0);
 }
