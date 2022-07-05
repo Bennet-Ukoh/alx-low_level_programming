@@ -1,61 +1,71 @@
 #include <stdio.h>
 
-
-
 /**
- * main - program that prints the numbers from 00 to 99
- * Numbers must be separated by ,followed by a space
- * Numbers should be printed in ascending order with 2 digits
- * You can only use the putchar function
- * Return: 0
- */
-
-
+ *
+ *  * main - print numbers from 00 to 99.
+ *
+ *  (*
+ *
+ *   * Return: 0 on success
+ *
+ *    */
 
 int main(void)
 
 {
 
-	int n1 = 48;
+		int i = '0';
 
-	int n2 = 48;
+			int j = '0';
 
-	int com = 44;
 
-	while (n1 <= 57)
 
-	{
+				while (i <= '9')
 
-		n2 = 48;
+						{
 
-		while (n2 <= 57)
+									while (j <= '9')
 
-		{
+												{
 
-			putchar(n1);
+																putchar(i);
 
-			putchar(n2);
+																			putchar(j);
 
-			if (n1 != 57 || n2 != 57)
+																						if (j == '9' && i == '9')
 
-			{
+																										{
 
-				putchar(com);
+																															putchar('\n');
 
-				putchar(32);
+																																		}
 
-			}
+																									else
 
-			n2 += 1;
+																													{
 
-		}
+																																		putchar(',');
 
-		n1 += 1;
+																																						putchar(' ');
 
-	}
+																																									}
 
-	putchar('\n');
+																												j++;
 
-	return (0);
+																														}
+
+											if (j >= '9')
+
+														{
+
+																		j = '0';
+
+																				}
+
+													i++;
+
+														}
+
+					return (0);
 
 }
