@@ -1,4 +1,4 @@
-ALX - 0x02-functions, inested loops
+ALX - 0x02-functions, nested loops
 
 Basics of nested loops and 2D loops
 
