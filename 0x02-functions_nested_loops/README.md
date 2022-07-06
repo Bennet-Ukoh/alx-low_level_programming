@@ -1,3 +1,4 @@
+!#/bin/bash
 ALX - 0x02-functions, nested loops
 
 Basics of nested loops and 2D loops
