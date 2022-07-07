@@ -1,62 +1,39 @@
 #include "main.h"
 /**
- * print_number - prints a number
- * @n: Input number
+ * print_number - prints an integer
+ * @n:.input integer parameter
  */
+
 void print_number(int n)
+
 {
-	long len, res, i, temp, expo;
 
-	res = n;
+	unsigned int i = n;
 
-	expo = len =  1;
 
-/*Check negatives*/
 
-	if (res < 0)
+	if (n < 0)
 
 	{
 
-		res *= -1;
+		_putchar(45);
 
-		_putchar('-');
+		i = -i;
 
 	}
 
-/**/
-
-	temp = res;
-
-	while (temp >= 10)
+	if (i / 10)
 
 	{
 
-		len++;
-
-		temp /= 10;
+		print_number(i / 10);
 
 	}
 
-
-
-/*Create Exponent*/
-
-	for (i = 1; i < len; i++)
-
-		expo *= 10;
-
-/*Main */
-
-	while (expo > 1)
-
-	{
-
-		_putchar((res / expo) % 10 + '0');
-
-		expo /= 10;
-
-	}
-
-	_putchar(res % 10 + '0');
+	_putchar(i % 10 + '0');
 
 }
+
+Footer
+
+© 2022 Git
