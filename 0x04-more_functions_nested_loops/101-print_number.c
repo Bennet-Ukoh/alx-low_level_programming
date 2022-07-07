@@ -5,17 +5,12 @@
  */
 
 void print_number(int n)
-
 {
-
 	unsigned int i = n;
-
-
 
 	if (n < 0)
 
 	{
-
 		_putchar(45);
 
 		i = -i;
@@ -31,9 +26,4 @@ void print_number(int n)
 	}
 
 	_putchar(i % 10 + '0');
-
 }
-
-Footer
-
-© 2022 Git
