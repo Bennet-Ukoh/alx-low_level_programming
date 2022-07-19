@@ -11,6 +11,7 @@ int main(void)
 {
 	int i;
 	int j;
+
 	i = 48;
 
 	j = 49;
