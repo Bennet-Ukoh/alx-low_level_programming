@@ -28,6 +28,7 @@ int _strncmp(char *s1, char *s2, unsigned int b)
 char *_strstr(char *haystack, char *needle)
 {
 	unsigned int len;
+
 	/*Get length of needle for strncmp*/
 	len = 0;
 
