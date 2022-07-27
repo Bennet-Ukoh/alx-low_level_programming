@@ -10,6 +10,7 @@
 int wrdcnt(char *s)
 {
 	int i, n = 0;
+
 	for (i = 0; s[i]; i++)
 	{
 		if (s[i] == ' ')
