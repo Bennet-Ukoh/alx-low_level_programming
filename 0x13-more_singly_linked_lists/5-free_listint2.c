@@ -2,9 +2,9 @@
 #include <stdlib.h>
 /**
  * free_listint2 - frees listint_t list
- * @head: points to the pointer to the beginning of the the listint_t list
+ * @head: double pointer to the list
  *
- * Return: nothing
+ * Return:void
  */
 void free_listint2(listint_t **head)
 {
@@ -14,7 +14,7 @@ void free_listint2(listint_t **head)
 		return;
 	while (*head != NULL)
 	{
-		temp = *head->next;
+		temp = (*head)->next;
 		free(*head);
 		*head = temp;
 	}
