@@ -2,10 +2,10 @@
 #include <stdio.h>
 
 /**
- * print_listint - prints all the elements of the list
- * @h: points to the elements to be printed
+ * print_listint - prints all the elements of a listint_t list
+ * @h: list to print
  *
- * Return: number of nodes
+ * Return: number of elements in the list
  */
 size_t print_listint(const listint_t *h)
 {
