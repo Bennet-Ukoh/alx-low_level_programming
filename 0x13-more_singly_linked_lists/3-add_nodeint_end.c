@@ -2,15 +2,16 @@
 #include <stdlib.h>
 
 /**
- * add_nodeint_end - adds a new node at theend of the listint_t list
- * @head: points to the address of the elements to be printed in the listint_t list
- * @n: integer
+ * add_nodeint_end - adds a new node at the end of a listint_t list.
+ * @head: double pointer to the beginning of the list
+ * @n: integer to add to the list
  *
- * Return: address of the new element on sucess
+ * Return: pointer to the new node
  */
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
-	listint_t *new, *temp;
+	listint_t *new;
+	listint_t *current;
 
 	if (head == NULL)
 		return (NULL);
@@ -19,11 +20,16 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 		return (NULL);
 	new->n = n;
 	new->next = NULL;
-	temp = *head;
-	while (temp->next != NULL)
+	if (*head == NULL)
 	{
-		temp = temp->next;
+		*head = new;
+		return (new);
 	}
-	temp->next = new;
+	current = *head;
+	while (current->next != NULL)
+	{
+		current = current->next;
+	}
+	current->next = new;
 	return (new);
 }
